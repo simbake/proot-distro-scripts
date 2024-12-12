@@ -22,7 +22,7 @@ pkg install dbus proot-distro pulseaudio virglrenderer-android -y
 pkg install pavucontrol-qt firefox -y
 
 # Install ubuntu in proot-distro
-yes | proot-distro install ubuntu
+yes | proot-distro install ubuntu-oldlts
 
 # Update proot-distro
 yes | proot-distro login ubuntu --shared-tmp -- env DISPLAY=:1 apt update
